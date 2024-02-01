@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 400px;
+  background: #ffffff;
+  padding: 1rem;
+  /* margin: 5rem auto; */
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+.container h1 {
+  text-align: center;
+  font-family: 'Monoton';
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  padding: 2.4rem 0;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px 1rem;
+  background: #b9b9b9;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputField input {
+  background: transparent;
+  /* padding: 20px; */
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+.inputField input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.inputField button {
+  background: #b5b5b5;
+  color: #000000;
+  font-size: 4rem;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transform: rotate(90deg);
+}
+
+/* to do list style */
+.toDoList {
+  margin-top: 2rem;
+}
+.toDoList span {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.toDoList .list-items {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.list-items .items {
+  background: #6e6e6e;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+}
+input[type='checkbox'] {
+  padding: 5px;
+  cursor: pointer;
+}
+.items-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.items-text div {
+  color: red;
+  overflow: hidden;
+}
+.notify {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.delete-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 27px !important;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: block;
+}
+.delete-icon:hover {
+  background: #9f9f9f;
+  transition: 0.3s;
+}
+
+.isChecked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.stats {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: #bdbdbd;
+}
